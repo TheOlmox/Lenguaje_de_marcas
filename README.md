@@ -7,4 +7,4 @@ Asir-1
 
 ### Ejercicio 1
 
-https://github.com/TheOlmox/Lenguaje_de_marcas.13/blob/master/ejercicios%20en%20github/Paginanueva.html
+https://theolmox.github.io/Lenguaje_de_marcas.13/ejercicios%20en%20github/Paginanueva.html
