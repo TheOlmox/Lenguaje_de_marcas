@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+/* hace que las fotos en vez de ir para abajo al no tener espacio, se recortan mutuamente para ajustarse al tamaño de la pagina*/
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.imagenes{
+    width: 20px;
+    height: 4px;
+
+}
+</style>
+</head>
+<body>
+  <meta charset="UTF-8">
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="fotos/italia.jpg" alt="Ejemplo"  class:="imagenes">
+  </div>
+  <div class="img-container">
+  <img src="fotos/bosques.jpeg" alt="Ejemplo" class:="imagenes">
+  </div>
+  <div class="img-container">
+  <img src="fotos/montañas.jpg" alt="Ejemplo" class:="imagenes">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
