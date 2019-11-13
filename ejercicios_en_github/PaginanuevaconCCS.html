@@ -12,7 +12,7 @@ color:black;
 
  h1  {color:rgb(60, 60, 190);
         font-size: 130%;
-        background-color: #66ff66;
+        
 }
 
  p   {color:green; font-size: 150%; 
@@ -34,11 +34,57 @@ td {
 tr {
     color:  rgb(62, 48, 189); 
     font-size: 21px;
+    background-color:cornsilk;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+  li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
 .cursiva{
     font-size: 20px;
     }
+.table2{
+    border: black 5px solid;
+   
+    background-color: #eeeeee ;
+    width: 100% ;
+    float:center;
+}
+.litablas {
+    font-size: 130%; 
+        background-color: white;
+}
+.libarra{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
 
 </style>
@@ -46,14 +92,19 @@ tr {
    
  
     <table class="table">
-    <div>
+
         <tr bgcolor="#66ff66">
             <td colspan="2" align="center"><h1>Dioses del Olimpo</h1></td>
         </tr>
-    </div>
+
         <tr>
             <td colspan="2" align="center" bgcolor="#ccffff"> En la religión de la antigua Grecia, <b>los dioses olímpicos son los principales dioses del panteón griego</b>, que moraban en el monte Olimpo (el más alto de Grecia). A ellos les fueron consagrados tanto templos, como festividades cívicas, actividades artísticas y deportivas, siendo considerados los más importantes dentro del amplio conjunto de las deidades de la mitología griega. En sus orígenes, los primeros cultos se remontan aproximadamente hace 5000-6000 años, hacia el 3500 a. C.1​2​3​ El culto a las deidades de la Antigua Grecia permanece vigente en el Helenismo. </td>
         </tr>
+        <ul class="libarra">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Dioses_ol%C3%ADmpicos" >Mas info</a></li>
+            <li><a href="https://mitologia.guru/dioses-mitologicos/dioses-del-olimpo/" >alternativa</a></li>
+          </ul>
         <tr>
           <td width="30%" align="center" bgcolor="#eeeeee">
               <table>
@@ -70,7 +121,7 @@ tr {
                 </tr>
             </table>
           </td>
-          <td align="center" bgcolor="#eeeeee" > <ul>
+          <td align="center" bgcolor="#eeeeee" > <ul class="litablas">
             <li>En la religion griega fue conocido como <b>«padre de los dioses y los hombres».</b></li>
             <li>Tuvo MUCHOS hijos e hijas.</li>
             <li>Junto a sus hermanos hades, poseidon... derrotaron a Cronos (su padre).</li>
@@ -79,7 +130,7 @@ tr {
         <tr>
           <td align="center">
                 <table class="table">
-                        <tr bgcolor="#66ff66">
+                        <tr >
                             <td colspan="2" align="center"><h1>Poseidón</h1></td>
                         </tr>
                         <tr>
@@ -91,14 +142,14 @@ tr {
                             <td><h1 style="font-size:125%;">Es el dios de los mares y, como «Agitador de la Tierra», de los terremotos en la mitología griega.</td>
                         </tr>
                     </table class="table">
-                    <td align="center" bgcolor="#eeeeee"> <ul>
+                    <td align="center" bgcolor="#eeeeee"> <ul class="litablas">
                             <li>Tambien fue llamado Neptuno en latín.</li>
                             <li> Fue integrado en el panteón olímpico posterior como hermano de <b>Zeus</b> y <b>Hades.</b></li>
                             <li>A diferencía de Zeus el cual domina los cielos, Poseidón gobernaba los mares. Segun dicen los rumores fue conocido por ser un mal marido.</li>
                           </ul> </td>
                           <tr>
                                 <td align="center">
-                                      <table>
+                                      <table class="table">
                                               <tr>
                                                   <td colspan="2" align="center"><h1>Hera</h1></td>
                                               </tr>
@@ -110,14 +161,14 @@ tr {
                                                   </td>
                                                   <td><h1 style="font-size:125%;">es la legítima esposa de Zeus en el panteón olímpico de la mitología griega clásica. Además, ocupaba el cargo de Reina de los dioses</td>
                                               </tr>
-                                          </table class="table">
-                                          <td align="center" bgcolor="#eeeeee"> <ul>
+                                          </table>
+                                          <td align="center" bgcolor="#eeeeee"> <ul class="litablas">
                                                   <li>Conocida por su naturaleza celosa, violenta y vengativa.</li>
                                                   <li>Conocida como la diosa matrona.</li>
                                                   <li>También fue adorada como virgen.</li>
                                              </ul> </td>
                                           
-<table border="5" width="50%" align="center" bgcolor="#eeeeee">
+<table  class="table2" >
 <tr>
     <td colspan="2" align="center">
             <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">
