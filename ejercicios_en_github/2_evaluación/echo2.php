@@ -1,11 +1,27 @@
 <?php
-echo "<h1>";
-echo $_GET["nombre"];
-echo "</h1>";
+/*echo "<h1>";*/
+if (isset($_GET["firstname"]))
+    echo $_GET["firstname"];
+/*echo "</h1>";*/
 echo "<br>";
-echo $_GET["contraseña"];
-echo $_GET {"texto"}
-echo $_GET {"formulario"}
-echo $_GET {"gender"}
-echo $_GET {"acepto"}
-echo $_GET {"me_niego"}
+if (isset($_GET["lastname"]))
+    echo $_GET["lastname"];
+echo "<br>";
+if (isset($_GET["pasahitza"]))
+    echo $_GET["pasahitza"];
+echo "<br>";
+if (isset($_GET["gender"]))
+    echo $_GET["gender"];
+        
+echo "<br>";
+if (isset($_GET["have_a_bike"]))
+    echo $_GET["have_a_bike"];
+        
+echo "<br>";
+if (isset($_GET["message"]))
+    echo $_GET["message"];
+    
+        
+echo "<br>";
+if (isset($_GET["carlist"]))
+    echo $_GET["carlist"];
