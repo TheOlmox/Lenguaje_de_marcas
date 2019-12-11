@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-wrap: wrap;
+}
+/* display flex sirve para que flex hace que aparezca en linea */
+/*flex-wrap ajusta la web a la pantalla*/
+.flex-container > div {
+  background-color: #f1f1f1;
+  width:100%;
+  margin: 10px;
+  padding: 25px;
+  font-size: 30px;
+}
+.flex-item {
+    background-color: cornflowerblue;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding: 10px;
+}
+.flex-item:first-child {
+  margin-right: auto;
+}
+    
+    
+/* .flex-container > div hace que todos los divs dentro de la clase (flex-container) tengan las caracteristicas de esta clase*/
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>
+    3
+      <div style="order: 1"> 1</div>
+      <div style="order: 2">2 </div>
+      <div style="order: 3"> 3</div>
+
+  </div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
