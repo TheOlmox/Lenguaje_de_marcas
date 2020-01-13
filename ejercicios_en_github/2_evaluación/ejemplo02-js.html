@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+        .flex-container {
+            display: flex;
+            background-color: black;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .imagen{
+            width: 500px;
+        }
+        
+        .boton{
+            width: 50%;
+        }
+        
+
+       
+        </style>
+    </head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <div class="flex-container">
+        <div>
+            <button onclick="document.getElementById('myImage').src='img/kipchoge2.jpg'" class="boton">Kipchoge</button>
+
+            <img id="myImage" src="img/kipchoge2.jpg" class="imagen">
+
+            <button onclick="document.getElementById('myImage').src='img/curry2.jpg'" class="boton">Curry</button>
+         
+        
+        </div>
+    </div>
+        <!--display='none' = desaparece-->
+            <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+            <p id="demo">aaaaaaaaaaaaaaaa</p>
+
+</body>
+</html>
