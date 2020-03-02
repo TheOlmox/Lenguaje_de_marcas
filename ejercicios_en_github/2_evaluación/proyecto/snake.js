@@ -162,9 +162,11 @@ function main () {
     choquepared();
     dibujar();
     movimiento();
+    
     if(cabeza.choque (comida)){
         comida.colocar();
         cabeza.meter();
     }
+    
 }
-setInterval("main()", velocidad);
+setInterval("main()",velocidad);
