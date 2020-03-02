@@ -102,7 +102,8 @@ function control(event) {
             ejey = true;
         }
     }
-    if(ejey == 37){
+    if(ejey){
+     if(cod == 37){
         ydir = 0;
         xdir = -tamano;
         ejey = false;
