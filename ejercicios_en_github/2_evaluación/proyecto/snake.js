@@ -1,6 +1,6 @@
 //Variables globales
 var velocidad = 80;
-var tamano = 10;
+var tamaño = 10;
 
 class objeto {
     constructor(){
@@ -10,7 +10,7 @@ class objeto {
     choque(obj){
         var difx = Math.abs (this.x - obj.x);
         var dify = Math.abs(this.y - obj.y);
-        if (difx >= 0 && difx < tamano && dify >= 0 && dify < tamano) {
+        if (difx >= 0 && difx < tamaño && dify >= 0 && dify < tamaño) {
             return true;    
         } else {
             return false;
@@ -31,7 +31,7 @@ class Cola extends objeto {
             this.siguiente.dibujar(ctx);
         }
         ctx.fillStyle = "#0000FF";
-        ctx.fillRect (this.x, this.y, this.tamano, this.tamano);
+        ctx.fillRect (this.x, this.y, this.tamaño, this.tamaño);
     }
     // != (not)
     setxy(x,y) {
@@ -69,7 +69,7 @@ class food extends objeto{
     }
     dibujar(ctx){
         ctx.fillStyle = "#FF0000";
-        ctx.fillRect(this.x, this.y, this.tamano, this.tamano);
+        ctx.fillRect(this.x, this.y, this.tamaño, this.tamaño);
     }
 }
 //Objetos del juego
@@ -89,14 +89,14 @@ function control(event) {
     //es una ppropiedad y no funcion( por lo tanto no parentesis)
     if(ejex){
         if(cod == 38){
-            ydir = -tamano;
+            ydir = -tamaño;
             //de esta manera los cuadrados no de atras de la serpiente no pueden atravesar a la serpiente
             xdir = 0;
             ejex = false;
             ejey = true;
         }
         if(cod == 40){
-            ydir = tamano;
+            ydir = tamaño;
             xdir = 0;
             ejex = false;
             ejey = true;
@@ -105,13 +105,13 @@ function control(event) {
     if(ejey){
      if(cod == 37){
         ydir = 0;
-        xdir = -tamano;
+        xdir = -tamaño;
         ejey = false;
         ejex = true;
     }
     if(cod == 39){
         ydir = 0;
-        xdir = tamano;
+        xdir = tamaño;
         ejey = false;
         ejex = true;
     }
