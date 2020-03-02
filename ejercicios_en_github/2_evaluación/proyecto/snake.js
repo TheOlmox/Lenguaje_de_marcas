@@ -73,7 +73,7 @@ class food extends objeto{
     }
 }
 //Objetos del juego
-var cabeza = new Cola();
+var cabeza = new Cola(20,20);
 var comida = new food();
 var ejex = true;
 var ejey = true;
@@ -122,7 +122,7 @@ function findeJuego(){
     ydir = 0;
     ejex = true;
     ejey = true;
-    cabeza = new Cola();
+    cabeza = new Cola(20,20);
     alert("Perdiste");
 }
 //II= o
