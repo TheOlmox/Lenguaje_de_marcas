@@ -151,7 +151,7 @@ function choquecuerpo(){
 function dibujar() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext ("2d");
-    ctx.clearRect(0,0, canvas.clientWidth, canvas.height);
+    ctx.clearRect(0,0, canvas.Width, canvas.height);
     //aqui abajo va todo el dibujo
     cabeza.dibujar(ctx);
     comida.dibujar(ctx);
