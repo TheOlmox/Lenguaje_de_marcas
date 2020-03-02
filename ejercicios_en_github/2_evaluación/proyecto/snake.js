@@ -4,7 +4,7 @@ var tamaño = 10;
 
 class objeto {
     constructor(){
-        this.tamano = tamano;
+        this.tamaño = tamaño;
     }
     //&&=Y
     choque(obj){
