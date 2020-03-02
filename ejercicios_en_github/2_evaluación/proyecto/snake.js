@@ -157,7 +157,7 @@ function dibujar() {
     comida.dibujar(ctx);
 }
 //funcion principal del juego
-function main () {
+function principal() {
     choquecuerpo();
     choquepared();
     dibujar();
@@ -166,7 +166,6 @@ function main () {
     if(cabeza.choque (comida)){
         comida.colocar();
         cabeza.meter();
-    }
-    
+    }  
 }
-setInterval("main()",velocidad);
+setInterval("principal()", velocidad);
